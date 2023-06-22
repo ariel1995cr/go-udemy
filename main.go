@@ -1,15 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"runtime"
-
-	"github.com/arielt1995/godesde0/ejercicios"
-	"github.com/arielt1995/godesde0/variables"
-)
+import "github.com/arielt1995/godesde0/funciones"
 
 func main() {
-	variables.MostrarEnteros()
+	/* variables.MostrarEnteros()
 	variables.RestoVariables()
 	estado, texto := variables.ConvertToText(1588)
 	fmt.Println(estado)
@@ -38,8 +32,10 @@ func main() {
 	entero, mensaje = ejercicios.ReturnValue("asddsa")
 	fmt.Printf("El entero es %d y el mensaje es %s \n", entero, mensaje)
 
-	//teclado.IngresoNumeros()
+	teclado.IngresoNumeros()
 
-	fmt.Println(ejercicios.CreateNumericTable())
+	fmt.Println(ejercicios.CreateNumericTable())*/
 
+	funciones.Calculos()
+	funciones.LlamarClosure()
 }
