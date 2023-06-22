@@ -1,10 +1,12 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/arielt1995/godesde0/arreglos_slices"
-	d "github.com/arielt1995/godesde0/defer_panic"
 	e "github.com/arielt1995/godesde0/ejer_interfaces"
 	"github.com/arielt1995/godesde0/funciones"
+	"github.com/arielt1995/godesde0/gorutines"
 	"github.com/arielt1995/godesde0/mapas"
 	"github.com/arielt1995/godesde0/modelos"
 	"github.com/arielt1995/godesde0/users"
@@ -59,6 +61,12 @@ func main() {
 	Aldana := new(modelos.Mujer)
 	e.HumanosRespirando(Aldana)
 
-	d.VemosDefer()
-	d.EjemploPanic()
+	//d.VemosDefer()
+	//d.EjemploPanic()
+	go gorutines.MiNombreLento("Ariel Triviño")
+
+	fmt.Println("Estoy aqui")
+
+	var x string
+	fmt.Scanln(&x)
 }
