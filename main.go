@@ -2,8 +2,10 @@ package main
 
 import (
 	"github.com/arielt1995/godesde0/arreglos_slices"
+	e "github.com/arielt1995/godesde0/ejer_interfaces"
 	"github.com/arielt1995/godesde0/funciones"
 	"github.com/arielt1995/godesde0/mapas"
+	"github.com/arielt1995/godesde0/modelos"
 	"github.com/arielt1995/godesde0/users"
 )
 
@@ -49,4 +51,10 @@ func main() {
 	arreglos_slices.Capacidad()
 	mapas.MostrarMapas()
 	users.AltaUsuario()
+
+	Ariel := new(modelos.Hombre)
+	e.HumanosRespirando(Ariel)
+
+	Aldana := new(modelos.Mujer)
+	e.HumanosRespirando(Aldana)
 }

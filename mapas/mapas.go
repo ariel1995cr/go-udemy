@@ -27,5 +27,5 @@ func MostrarMapas() {
 	}
 
 	puntaje, existe := campeonato["Boke Jrs"]
-	fmt.Printf("El puntaje capturado es %d y el equipo es existe = %t", puntaje, existe)
+	fmt.Printf("El puntaje capturado es %d y el equipo es existe = %t \n", puntaje, existe)
 }
