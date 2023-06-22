@@ -4,6 +4,7 @@ import (
 	"github.com/arielt1995/godesde0/arreglos_slices"
 	"github.com/arielt1995/godesde0/funciones"
 	"github.com/arielt1995/godesde0/mapas"
+	"github.com/arielt1995/godesde0/users"
 )
 
 func main() {
@@ -47,4 +48,5 @@ func main() {
 	arreglos_slices.MuestroSlice()
 	arreglos_slices.Capacidad()
 	mapas.MostrarMapas()
+	users.AltaUsuario()
 }
