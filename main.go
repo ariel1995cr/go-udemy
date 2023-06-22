@@ -1,6 +1,9 @@
 package main
 
-import "github.com/arielt1995/godesde0/funciones"
+import (
+	"github.com/arielt1995/godesde0/arreglos_slices"
+	"github.com/arielt1995/godesde0/funciones"
+)
 
 func main() {
 	/* variables.MostrarEnteros()
@@ -39,4 +42,7 @@ func main() {
 	funciones.Calculos()
 	funciones.LlamarClosure()
 	funciones.Exponencia(2)
+	arreglos_slices.MuestroArreglos()
+	arreglos_slices.MuestroSlice()
+	arreglos_slices.Capacidad()
 }
