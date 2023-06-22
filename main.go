@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/arielt1995/godesde0/arreglos_slices"
+	d "github.com/arielt1995/godesde0/defer_panic"
 	e "github.com/arielt1995/godesde0/ejer_interfaces"
 	"github.com/arielt1995/godesde0/funciones"
 	"github.com/arielt1995/godesde0/mapas"
@@ -57,4 +58,7 @@ func main() {
 
 	Aldana := new(modelos.Mujer)
 	e.HumanosRespirando(Aldana)
+
+	d.VemosDefer()
+	d.EjemploPanic()
 }
