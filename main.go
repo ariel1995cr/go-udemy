@@ -1,16 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/arielt1995/godesde0/arreglos_slices"
-	e "github.com/arielt1995/godesde0/ejer_interfaces"
-	"github.com/arielt1995/godesde0/funciones"
-	"github.com/arielt1995/godesde0/gorutines"
-	"github.com/arielt1995/godesde0/mapas"
-	"github.com/arielt1995/godesde0/modelos"
-	"github.com/arielt1995/godesde0/users"
-	"github.com/arielt1995/godesde0/webserver"
+	"github.com/arielt1995/godesde0/middleware"
 )
 
 func main() {
@@ -45,7 +36,7 @@ func main() {
 
 	teclado.IngresoNumeros()
 
-	fmt.Println(ejercicios.CreateNumericTable())*/
+	fmt.Println(ejercicios.CreateNumericTable())
 
 	funciones.Calculos()
 	funciones.LlamarClosure()
@@ -69,7 +60,8 @@ func main() {
 	defer func() {
 		<-canal1
 	}()
-	fmt.Println("Estoy aqui")
+	fmt.Println("Estoy aqui")*/
 
-	webserver.MiWebServer()
+	//webserver.MiWebServer()
+	middleware.MiMiddleware()
 }
