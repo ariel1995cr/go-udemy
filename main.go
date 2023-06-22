@@ -63,10 +63,11 @@ func main() {
 
 	//d.VemosDefer()
 	//d.EjemploPanic()
-	go gorutines.MiNombreLento("Ariel Triviño")
-
+	canal1 := make(chan bool)
+	go gorutines.MiNombreLento("Ariel Triviño", canal1)
+	defer func() {
+		<-canal1
+	}()
 	fmt.Println("Estoy aqui")
 
-	var x string
-	fmt.Scanln(&x)
 }
