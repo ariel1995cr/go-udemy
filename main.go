@@ -40,6 +40,6 @@ func main() {
 
 	//teclado.IngresoNumeros()
 
-	ejercicios.CreateNumericTable()
+	fmt.Println(ejercicios.CreateNumericTable())
 
 }
