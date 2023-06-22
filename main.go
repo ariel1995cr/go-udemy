@@ -36,5 +36,10 @@ func main() {
 	fmt.Printf("El entero es %d y el mensaje es %s \n", entero, mensaje)
 
 	entero, mensaje = ejercicios.ReturnValue("asddsa")
-	fmt.Printf("El entero es %d y el mensaje es %s", entero, mensaje)
+	fmt.Printf("El entero es %d y el mensaje es %s \n", entero, mensaje)
+
+	//teclado.IngresoNumeros()
+
+	ejercicios.CreateNumericTable()
+
 }
